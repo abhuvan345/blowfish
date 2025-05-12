@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1b2a; /* Background: Very dark navy blue */
+  color: #e0e1dd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #223349; /* Frontend block: Contrasting lighter dark blue */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.file-input,
+.key-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #324963;
+  color: #f8f9fa;
+  font-size: 1rem;
+  outline: none;
+}
+
+.key-input::placeholder {
+  color: #cfd9e2;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  background-color: #3f6aa8; /* Brighter bluish contrast */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #548be3;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+img {
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  height: auto;
+}
