@@ -46,7 +46,7 @@ function App() {
     formData.append("key", key);
 
     try {
-      const res = await axios.post("http://localhost:5000/encrypt", formData, {
+      const res = await axios.post("https://blowfish-1.onrender.com/encrypt", formData, {
         responseType: "blob",
       });
 
@@ -100,7 +100,7 @@ function App() {
       formData.append("file", file);
       formData.append("key", key);
 
-      const res = await axios.post("http://localhost:5000/decrypt", formData, {
+      const res = await axios.post("https://blowfish-1.onrender.com/decrypt", formData, {
         responseType: "blob",
       });
 
